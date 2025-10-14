@@ -1,10 +1,15 @@
-import ContactContainer from "@/main/contact";
+import Footer from "@/components/Footer";
+import ContactPage from "@/components/home/ConatactHero";
 
-// app/contact/page.tsx
-export default function HomePage() {
+import Navbar from "@/components/Navbar";
+
+export default function About() {
   return (
     <>
-      <ContactContainer />
+      <Navbar />
+      <ContactPage />
+
+      <Footer />
     </>
   );
 }
