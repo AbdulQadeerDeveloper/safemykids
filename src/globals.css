@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff; /* white background */
+  --foreground: #000000; /* black text */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Even in dark mode, stay white background with black text */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+}
+
+body {
+  background: var(--background) !important;
+  color: var(--foreground);
+  font-family: "Geist", sans-serif;
+}
+
+/* Utility classes */
+.color-black {
+  color: #000 !important;
+}
+
+.bg-background {
+  background-color: var(--background) !important;
+}
