@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Auth Buttons */}
           <div className="flex items-center gap-6">
             <Link href="/auth/login">
-              <p className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 transition">
+              <p className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 font-semibold hover:to-blue-500 transition">
                 Sign In
               </p>
             </Link>
@@ -136,7 +136,7 @@ const Navbar = () => {
         {/* Mobile Auth Buttons */}
         <div className="flex flex-col gap-4 px-6 py-4 border-t border-gray-200">
           <Link href="/auth/login" onClick={() => setIsOpen(false)}>
-            <p className="font-bold text-center transition hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500">
+            <p className="font-semibold text-center transition hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500">
               Sign In
             </p>
           </Link>
