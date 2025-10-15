@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Eye, Bell, Activity, ShieldCheck, Smartphone } from "lucide-react";
-
+import Link from "next/link";
 export default function MonitoringSection() {
   const features = [
     {
@@ -66,14 +66,15 @@ export default function MonitoringSection() {
             activities, detect irregularities, and receive instant notifications
             — all in real time.
           </p>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 w-fit"
-          >
-            Explore Dashboard
-          </motion.button>
+          <Link href="/auth/login">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 w-fit"
+            >
+              Explore Dashboard
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* RIGHT SIDE — FEATURE CARDS */}

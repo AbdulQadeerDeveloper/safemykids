@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import React from "react";
 import { FaBolt } from "react-icons/fa";
@@ -29,7 +30,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {/* Title with React Icon */}
+          {/* Title */}
           <div className="flex justify-center md:justify-start items-center gap-3">
             <h1 className="text-3xl md:text-4xl md:py-6 font-extrabold leading-tight drop-shadow-lg">
               SnapCheck – Smart Digital Attendance Solution
@@ -58,14 +59,17 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-3">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-purple-400/50 transition-all duration-300"
-            >
-              Get Started
-              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-blue-600 opacity-0 hover:opacity-30 transition-opacity duration-300"></span>
-            </motion.button>
+            {/* ✅ Get Started with link */}
+            <Link href="/auth/login">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="relative bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-purple-400/50 transition-all duration-300"
+              >
+                Get Started
+                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-blue-600 opacity-0 hover:opacity-30 transition-opacity duration-300"></span>
+              </motion.button>
+            </Link>
 
             <motion.button
               whileHover={{ scale: 1.05 }}

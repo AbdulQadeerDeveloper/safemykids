@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PageWrapper from "../PageWrapper";
-
+import Link from "next/link";
 interface AccordProps {
   id: number;
   question: string;
@@ -119,10 +119,11 @@ const FaqsPage = () => {
               support@snapcheck.io
             </span>
           </p>
-
-          <button className="relative overflow-hidden px-8 py-3 text-white font-semibold rounded-xl bg-gradient-to-r from-purple-700 to-blue-500 hover:from-blue-500 hover:to-purple-700 shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 text-base transition-all duration-300 hover:scale-105">
-            Get in Touch
-          </button>
+          <Link href="/auth/login">
+            <button className="relative overflow-hidden px-8 py-3 text-white font-semibold rounded-xl bg-gradient-to-r from-purple-700 to-blue-500 hover:from-blue-500 hover:to-purple-700 shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 text-base transition-all duration-300 hover:scale-105">
+              Get in Touch
+            </button>
+          </Link>
         </div>
 
         {/* Right Accordion Section */}

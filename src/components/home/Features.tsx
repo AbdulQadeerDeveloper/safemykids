@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Activity, Users, Bell, Shield } from "lucide-react";
+import Link from "next/link";
 
 export default function MonitoringBioSection() {
   return (
@@ -30,14 +31,15 @@ export default function MonitoringBioSection() {
             actionable analytics — so you can respond instantly when something
             changes.
           </p>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
-          >
-            View Live Analytics
-          </motion.button>
+          <Link href="/auth/login">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              View Live Analytics
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* RIGHT SIDE — DASHBOARD VISUAL */}
