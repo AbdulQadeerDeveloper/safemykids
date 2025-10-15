@@ -22,7 +22,7 @@ const Navbar = () => {
     <>
       {/* Desktop Navbar */}
       <nav className="hidden lg:flex w-full h-[80px] sticky top-0 bg-white text-black border-b border-gray-200 shadow-md z-30 backdrop-blur-md bg-opacity-95 transition-all duration-300">
-        <div className="container mx-auto flex justify-between items-center h-full px-6">
+        <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto flex justify-between items-center h-full px-6">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <h1 className="text-2xl md:text-3xl font-extrabold">

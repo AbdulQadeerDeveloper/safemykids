@@ -71,7 +71,7 @@ export default function MonitoringTrands() {
       <div className="absolute top-0 left-0 w-60 h-60 bg-gradient-to-r from-purple-600 to-blue-500 blur-[120px] opacity-20 rounded-full -z-10" />
       <div className="absolute bottom-0 right-0 w-60 h-60 bg-gradient-to-l from-purple-600 to-blue-500 blur-[120px] opacity-20 rounded-full -z-10" />
 
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
         {/* LEFT SIDE — TEXT */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -79,7 +79,7 @@ export default function MonitoringTrands() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
             Smart{" "}
             <span className="bg-gradient-to-r from-green-500 to-blue-400 bg-clip-text text-transparent">
               Student Insights

@@ -10,7 +10,7 @@ export default function MonitoringBioSection() {
       <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-br from-purple-500 to-blue-500 opacity-20 blur-[120px] rounded-full -z-10"></div>
       <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-tl from-blue-600 to-purple-500 opacity-20 blur-[120px] rounded-full -z-10"></div>
 
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         {/* LEFT SIDE — CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -18,7 +18,7 @@ export default function MonitoringBioSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 leading-tight">
             Intelligent{" "}
             <span className="bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent">
               Monitoring Dashboard

@@ -32,7 +32,7 @@ export default function JourneySection() {
 
   return (
     <section className="bg-white py-24 px-6 text-gray-800">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="lg:w-[80%] xl:w-[74%] 2xl:max-w-[90rem] mx-auto grid md:grid-cols-2 gap-12">
         {/* Left content */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

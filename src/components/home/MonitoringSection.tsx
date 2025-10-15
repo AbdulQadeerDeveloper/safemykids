@@ -38,20 +38,21 @@ export default function MonitoringSection() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-24 bg-gray-50 relative overflow-hidden flex items-center">
       {/* Gradient background accents */}
       <div className="absolute top-0 left-0 w-60 h-60 bg-gradient-to-r from-purple-600 to-blue-500 blur-[120px] opacity-20 rounded-full -z-10" />
       <div className="absolute bottom-0 right-0 w-60 h-60 bg-gradient-to-l from-purple-600 to-blue-500 blur-[120px] opacity-20 rounded-full -z-10" />
 
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto px-6 grid md:grid-cols-2 gap-12 items-start md:items-stretch">
         {/* LEFT SIDE — TEXT CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="flex flex-col justify-start h-full"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
             Real-Time{" "}
             <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
               Monitoring
@@ -69,7 +70,7 @@ export default function MonitoringSection() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+            className="bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 w-fit"
           >
             Explore Dashboard
           </motion.button>
@@ -81,14 +82,14 @@ export default function MonitoringSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="grid sm:grid-cols-2 gap-6"
+          className="grid sm:grid-cols-2 gap-6 h-full content-start"
         >
           {features.map((feature) => (
             <motion.div
               key={feature.id}
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 250, damping: 20 }}
-              className="relative group bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-transparent overflow-hidden"
+              className="relative group bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-transparent overflow-hidden h-full"
             >
               {/* gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />

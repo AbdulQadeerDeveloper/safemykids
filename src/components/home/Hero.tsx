@@ -3,32 +3,51 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
+import { FaBolt } from "react-icons/fa";
 
 export default function Hero() {
+  const features = [
+    "Simplify Attendance",
+    "Enhance Efficiency",
+    "Empower Education",
+  ];
+
   return (
     <section
-      className="relative bg-cover bg-center text-white min-h-[100vh] flex items-center overflow-hidden"
+      className="relative bg-cover bg-center text-white min-h-[100vh] flex items-center overflow-hidden pt-[40px] md:pt-0"
       style={{ backgroundImage: "url('/home/imgi_52_banner-bg.jpg')" }}
     >
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-indigo-800/70"></div>
 
       {/* Content Wrapper */}
-      <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="relative lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Side (Text Section) */}
         <motion.div
-          className="max-w-xl space-y-6 z-10 md:w-1/2"
+          className="max-w-xl space-y-6 z-10 md:w-1/2 text-center md:text-left"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-            SnapCheck – Smart Digital Attendance Solution
-          </h1>
+          {/* Title with React Icon */}
+          <div className="flex justify-center md:justify-start items-center gap-3">
+            <h1 className="text-3xl md:text-4xl md:py-6 font-extrabold leading-tight drop-shadow-lg">
+              SnapCheck – Smart Digital Attendance Solution
+            </h1>
+          </div>
 
-          <p className="text-lg font-semibold text-purple-200">
-            Simplify Attendance • Enhance Efficiency • Empower Education
-          </p>
+          {/* Bolt Features */}
+          <ul className="space-y-3">
+            {features.map((feature) => (
+              <li
+                key={feature}
+                className="flex justify-center md:justify-start items-center gap-3 text-lg font-semibold text-purple-200"
+              >
+                <FaBolt className="text-yellow-400 animate-pulse" />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
 
           <p className="text-base text-white/90 leading-relaxed">
             SnapCheck revolutionizes attendance tracking with AI-driven face
@@ -38,8 +57,7 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4 pt-3">
-            {/* Primary Button */}
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-3">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -49,7 +67,6 @@ export default function Hero() {
               <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-blue-600 opacity-0 hover:opacity-30 transition-opacity duration-300"></span>
             </motion.button>
 
-            {/* Secondary Button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -67,7 +84,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="relative w-full max-w-[600px] h-auto">
+          <div className="relative w-[90%] sm:w-[80%] md:w-full max-w-[600px] h-auto">
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{

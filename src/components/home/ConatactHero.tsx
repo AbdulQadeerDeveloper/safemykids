@@ -24,7 +24,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      {/* 🌈 Hero Section */}
+      {/*  Hero Section */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-500 py-20 text-center text-white px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -43,7 +43,7 @@ export default function ContactPage() {
       </section>
 
       {/* 💬 Contact Form + Info */}
-      <section className="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <section className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto py-20 px-6  grid md:grid-cols-2 gap-10 items-start">
         {/* Left Info */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

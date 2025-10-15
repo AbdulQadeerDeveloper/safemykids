@@ -21,7 +21,7 @@ export default function Stats() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-700/80 to-blue-600/70"></div>
 
           {/* Hero text */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
+          <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export default function Stats() {
 
       {/*  Stats Section */}
       <section className="relative -mt-16 z-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+        <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
           {[
             { number: "2021", label: "Founding Year" },
             { number: "50+", label: "Schools Connected" },
@@ -72,7 +72,7 @@ export default function Stats() {
       </section>
 
       {/*  Description Section */}
-      <section className="py-20 px-6 text-center max-w-5xl mx-auto">
+      <section className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto py-20 px-6 text-center max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -99,4 +99,5 @@ export default function Stats() {
       </section>
     </div>
   );
+  
 }

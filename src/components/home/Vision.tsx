@@ -8,7 +8,7 @@ function Vision() {
   return (
     <div>
       <section className="py-20 px-6 bg-gray-50 text-gray-800">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div className="lg:w-[80%] xl:w-[74%] 2xl:max-w-[90rem] mx-auto grid md:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -54,15 +54,16 @@ function Vision() {
 
       {/* Values / Features Section */}
       <section className="py-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-        <div className="max-w-6xl mx-auto text-center mb-12">
+        <div className="lg:w-[80%] xl:w-[74%] 2xl:max-w-[90rem] mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Our Core Values</h2>
           <p className="text-lg text-white/90">
-            We believe in innovation, transparency, and a passion for safety —
+            We believe in innovation, transparency, and a passion for safety{" "}
+            <br />
             the foundation of everything we build at SnapCheck.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+        <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8  px-6">
           {[
             {
               title: "Innovation",

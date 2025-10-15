@@ -61,7 +61,7 @@ const Accordion = ({ faqs = [] }: AccordionProps) => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-4">
+    <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto flex flex-col gap-4">
       {faqs.map((faq) => (
         <motion.div
           key={faq.id}
