@@ -80,7 +80,7 @@ export default function MonitoringTrends() {
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-l from-purple-600 to-blue-500 blur-[120px] opacity-25 rounded-full -z-10" />
 
       {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="lg:w-[80%] xl:w-[75%] 2xl:max-w-[90rem] mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* LEFT SIDE — Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
